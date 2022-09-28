@@ -7,14 +7,14 @@
 
 Aplicação Java utilizando Maven e MongoDB
 
-alura = student
-principal = main
+- alura = student
+- principal = main
 
 
 https://github.com/mongodb/mongo-java-driver
 
 pom.xml:
-
+```
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>br.com.student</groupId>
@@ -28,10 +28,11 @@ pom.xml:
     </dependency>
   </dependencies>
 </project>
+```
 
 
 Main.java:
-
+```
 import com.mongodb.MongoClient;
 
 public class Main {
@@ -39,3 +40,4 @@ public class Main {
 		MongoClient client = new MongoClient();
 	}
 }
+```
